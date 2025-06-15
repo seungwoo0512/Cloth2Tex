@@ -193,8 +193,8 @@ class DeformGraphModel(torch.nn.Module):
                     aaa1 = np.expand_dims(aaa1, -1)
                     aaa2 = np.expand_dims(aaa2, -1)
                 
-                ccc1 = aaa1 * 0.3 + bbb1
-                ccc2 = aaa2 * 0.3 + bbb2
+                ccc1 = aaa1 * 0.2 + bbb1
+                ccc2 = aaa2 * 0.2 + bbb2
                 cv2.putText(ccc1, "front", (int(10), int(40)), cv2.FONT_HERSHEY_SIMPLEX, 1, (193, 33, 240), 2, cv2.LINE_AA) 
                 cv2.putText(ccc2, "back", (int(10), int(40)), cv2.FONT_HERSHEY_SIMPLEX, 1, (193, 33, 240), 2, cv2.LINE_AA) 
                 
